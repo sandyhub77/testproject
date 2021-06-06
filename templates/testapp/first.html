@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sandeepfile</title>
+    <style>
+        body{
+            background: darkorange;
+        }
+    </style>
+</head>
+<body>
+<h1 bgcolor="blue">hi this is {{ name }} from html page</h1><hr>
+<h1>empdetails</h1>
+{% for j in obj %}
+
+<h3>employeeName:{{ j.name }}</h3>
+<h3>designation:{{ j.designation }}</h3>
+<h3>location:{{ j.location }}</h3>
+<h3>salary:{{ j.salary }}</h3>
+{% endfor %}
+
+
+</body>
+</html>
